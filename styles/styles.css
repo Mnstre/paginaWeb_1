@@ -26,6 +26,6 @@ body{
     font-weight: bolder;
 }
 .jumbotron {
-    background-image: url(sample4.jpg);
+    background-image: url(../media/images/sample4.jpg);
     background-size: cover;
 }
