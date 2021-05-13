@@ -29,3 +29,11 @@ body{
     background-image: url(../media/images/sample4.jpg);
     background-size: cover;
 }
+div.card h5 {
+    color: rgba(50, 50, 50);
+    text-decoration: none;
+}
+div.card p {
+    color: rgb(80, 80, 80);
+    text-decoration: none;
+}
