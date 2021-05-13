@@ -1,0 +1,18 @@
+: Pagina Principal :
+ - Video de Presentación
+----------------------
+Productos
+ - Copiadoras
+ - Paneles
+ - Calentadores
+ - Cámaras
+Nosotros
+ - Filosofía
+Contacto
+ - FB
+ - Insta
+ - Whats
+ - Teléfono
+ - Dirección (Maps)
+Galería
+ - Fotos
