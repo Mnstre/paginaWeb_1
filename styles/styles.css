@@ -29,11 +29,30 @@ body{
     background-image: url(../media/images/sample4.jpg);
     background-size: cover;
 }
+.card {
+    width: 18rem;
+    color: white;
+    text-decoration: none;
+}
+/*
 div.card h5 {
     color: rgba(50, 50, 50);
     text-decoration: none;
 }
 div.card p {
     color: rgb(80, 80, 80);
+    text-decoration: none;
+}
+*/
+.responsive {
+    width: 10%;
+    height: auto;
+}
+h1 {
+    color:rgb(150, 150, 150);
+}
+.col-md-auto a{
+    color:rgb(180, 180, 180);
+    font-size: 1.5em;
     text-decoration: none;
 }
