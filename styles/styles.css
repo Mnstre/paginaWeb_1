@@ -29,3 +29,23 @@ body{
     background-image: url(../media/images/sample4.jpg);
     background-size: cover;
 }
+.display-5 {
+    color: rgb(179, 179, 179);
+}
+.container a {
+    color: white;
+    text-decoration: none;
+    font-size: 2.5em;
+}
+.responsive {
+    width: 100%;
+    height: auto;
+}
+.btn-circle.btn-xl {
+    width: 70px;
+    height: 70px;
+    padding: 10px 16px;
+    border-radius: 35px;
+    font-size: 24px;
+    line-height: 1.33;
+}
