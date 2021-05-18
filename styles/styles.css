@@ -28,6 +28,12 @@ body{
 .nav-item img {
     width: 2.5em;
 }
+.scrolled-down{
+    transform:translateY(-100%); transition: all 0.3s ease-in-out;
+  }
+  .scrolled-up{
+    transform:translateY(0); transition: all 0.3s ease-in-out;
+  }
 .jumbotron {
     background-image: url(../media/images/sample4.jpg);
     background-size: cover;
@@ -63,4 +69,7 @@ h1 {
     color:rgb(180, 180, 180);
     font-size: 2em;
     text-decoration: none;
+}
+footer {
+    color: rgba(102, 195, 64);
 }
