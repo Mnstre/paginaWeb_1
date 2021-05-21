@@ -43,16 +43,18 @@ body{
 }
 .card {
     background-color: rgba(102, 195, 64, 0.3);
-    width: 15em;
-    height: 25em;
+    
 }
 .card:hover {
     background-color: rgba(102, 195, 64, 0.5);
 }
-.card a{
+.card-body {
     /*width: 75%;*/
     color: rgb(90, 90, 90);
     text-decoration: none;
+}
+#textoPanel {
+    
 }
 /*
 div.card h5 {
