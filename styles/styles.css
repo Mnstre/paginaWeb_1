@@ -43,9 +43,12 @@ body a{
   .scrolled-up{
     transform:translateY(0); transition: all 0.3s ease-in-out;
   }
-.jumbotron {
+.jumbotrop {
     background-image: url(../media/images/sample4.jpg);
     background-size: cover;
+}
+#cardPanel {
+    background-image: url(../media/images/card_panel.PNG);
 }
 .card {
     background-color: rgba(102, 195, 64, 0.3);

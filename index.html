@@ -22,6 +22,8 @@
 		<meta http-equiv="cache-control" content="no-cache" />
 		<meta http-equiv="Pragma" content="no-cache" />
 		<meta http-equiv="Expires" content="-1" />
+		<!-- Font Awesome -->
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet"/>
 	</head>
 	<body>
 	<!-- ==== Navbar ==== -->
@@ -79,7 +81,7 @@
 		</nav>
 		<main>
 		<!-- ==== Jumbotrop ==== -->
-			<div class="jumbotron bg-image py-5 text-center shadow-1-strong mb-5 text-white">
+			<div class="jumbotrop bg-image py-5 text-center shadow-1-strong mb-5 text-white" id="cont">
 				<div class="container pt-5">
 					<!--h1 class="mb-5 p-2 h2 fs-1 py-5 text-start">
 						MHLE - Eco-Tecnologías y Servicios Integrados
@@ -95,12 +97,13 @@
 		<!--  ==== CARDS ====  -->
 			<div class="container justify-content-center pb-5">
 				<h1 class="text-center p-3">Consulte nuestros diferentes productos:</h1>
-				<div class="row justify-content-center">
-					<div class="card col-lg-5 col-sm-12 col-10 m-3 bg-transparent text-dark justify-content-center">
-						<img src="media/images/card_panel.PNG" class="card-img" alt="..." height="90%">
-						<div class="card-img-overlay position-absolute text-center" id="textoPanel0">
+				<div class="row align-items-center">
+					<div class="container position-relative bg-image col-lg-5 col-sm-12 col-10 text-dark text-center" id="cardPanel">
+						<!--img src="media/images/card_panel.PNG" class="img-fluid" alt="..."-->
+						<div class="container my-5">
 							<h1 class="fw-bold">Paneles Solares</h1>
-							<span class="">Acceso a energía eficiente a costo accesible</span>
+							<p class="">Acceso a energía eficiente a costo accesible</p>
+							<button class="btn m-3" style="background-color: rgb(102, 195, 64); color: white;">Entrar</button>
 						</div>
 					</div>
 					<div class="card col-lg-5 col-sm-12 col-10 m-3 bg-transparent text-dark justify-content-center">
@@ -192,11 +195,11 @@
 		<!-- ==== Footer ==== -->
 			<footer class="text-center text-lg-start bg-light text-muted">
 				<!-- Section: Social media -->
-				<!--section class="d-flex justify-content-center justify-content-lg-between p-1 border-bottom" >
-					<div class="me-5 d-none d-lg-block">
+				<!--section class="d-flex justify-content-center justify-content-lg-between p-1 border-bottom mx-4" >
+					<div class="m-2 d-none d-lg-block">
 						<span>Contacta con nosotros a traves de nuestras redes:</span>
 					</div>
-					<div>
+					<div class="m-2">
 						<a href="" class="me-4 text-reset"><i class="fab fa-facebook-f"></i></a>
 						<a href="" class="me-4 text-reset"><i class="fab fa-twitter"></i></a>
 						<a href="" class="me-4 text-reset"><i class="fab fa-google"></i></a>
@@ -205,9 +208,9 @@
 						<a href="" class="me-4 text-reset"><i class="fab fa-github"></i></a>
 					</div>
 				</section-->
-				<!-- Section: Links  -->
+				<!-- Section: Links -->
 				<section class="">
-					<div class="container text-center text-md-start mt-5 pt-4">
+					<div class="container text-center text-md-start pt-4">
 						<div class="row mt-3">
 							<!--div class="col-md-2 col-lg-4 col-xl-3 mx-auto mb-4"-->
 							<div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
@@ -276,7 +279,7 @@
 					</div>
 				</section>
 				<!-- Copyright -->
-				<div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+				<div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);">
 					© 2021 Copyright:
 					<a class="text-reset fw-bold" href="https://mhle.com.mx/">mhle.com.mx</a>
 				</div>
