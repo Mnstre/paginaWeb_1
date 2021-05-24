@@ -40,7 +40,7 @@ body a{
 .scrolled-down{
     transform:translateY(-100%); transition: all 0.3s ease-in-out;
   }
-  .scrolled-up{
+.scrolled-up{
     transform:translateY(0); transition: all 0.3s ease-in-out;
   }
 .jumbotrop {
@@ -48,7 +48,17 @@ body a{
     background-size: cover;
 }
 #cardPanel {
-    background-image: url(../media/images/card_panel.PNG);
+    height: 250px;
+    width: 500px;
+}
+#cardImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+#cardPanel p {
+    color: white;
+    background-color: rgb(0, 0, 0, 0.5);
 }
 .card {
     background-color: rgba(102, 195, 64, 0.3);
@@ -60,9 +70,8 @@ body a{
     /*width: 75%;*/
     color: rgb(90, 90, 90);
 }
-.card h1 {
-    color: rgb(102, 195, 64);
-    /*font-size: 500%;*/
+#cardTitle {
+    color: rgba(102, 195, 64);
 }
 .card span {
     color: white;
