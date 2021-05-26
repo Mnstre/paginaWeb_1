@@ -51,6 +51,7 @@ body a{
 #cardPanel {
     height: 250px;
     width: 500px;
+    transition: 0.5s ease;
 }
 .container image {
     transition: 1s ease;
@@ -64,8 +65,13 @@ body a{
 	transition: .5s ease;
 	backface-visibility: hidden;
 }
-#cardImage0:hover {
-    opacity: 0.3;
+#card0 {
+    width: 100%;
+    height: 100%;
+    transition: 0.5s ease;
+}
+#card0:hover {
+    opacity: 0.1;
 }
 #cardImage1 {
     width: 100%;
@@ -98,6 +104,11 @@ body a{
 .card span {
     color: white;
     font-size: 1em;
+}
+/*************************************************************************/
+#redesText {
+    color: gray;
+    font-size: 2em;
 }
 /*************************************************************************/
 /*
