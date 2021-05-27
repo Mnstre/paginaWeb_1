@@ -14,13 +14,20 @@ body a{
     padding-top: 4.5rem;
     color: blue;
 }
-.b-example-divider {
-    height: 2rem;
-    background-color: rgba(0, 0, 0, .1);
+/**************************************************/
+.divider {
+    height: 5rem;
+    background-color: rgba(255, 255, 255, .1);
     border: solid rgba(0, 0, 0, .15);
     border-width: 1px 0;
-    box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .35);
+    box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
 }
+/**************************************************/
+.mainHeader {
+    background-image: url(../media/images/sample4.jpg);
+    background-size: cover;
+}
+/**************************************************/
 .navbar {
     background-color: rgba(255, 255, 255);
     color: rgba(102, 195, 64);
@@ -34,35 +41,35 @@ body a{
 .nav-item img {
     width: 2.5em;
 }
-.dropdown a{
+.dropdown a {
     color: rgba(102, 195, 64);
 }
-.scrolled-down{
+.scrolled-down {
     transform:translateY(-100%); transition: all 0.3s ease-in-out;
   }
-.scrolled-up{
+.scrolled-up {
     transform:translateY(0); transition: all 0.3s ease-in-out;
   }
-.jumbotrop {
-    background-image: url(../media/images/sample4.jpg);
-    background-size: cover;
-}
 /*************************************************************************/
 .containerCard-0 { background-image: url(../media/images/card_panel.PNG); }
 .containerCard-1 { background-image: url(../media/images/card_calentador.jpg); }
 .containerCard-2 { background-image: url(../media/images/card_copiadora.jpg); }
 .containerCard-3 { background-image: url(../media/images/card_camara.jpg); }
-.containerCard {
-    background-size: cover;
-}
 .containerCard p {
     color: rgb(235, 235, 235);
     background-color: rgba(0, 0, 0, 0.4);
 }
-.containerCard image{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+.containerCard {
+    background-size: cover;
+    width: 500px;
+    height: 250px;
+    /**/
+    box-shadow: 0 6px 10px rgba(0,0,0,.08), 0 0 6px rgba(0,0,0,.05);
+    transition: .5s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
+}
+.containerCard:hover {
+    transform: scale(1.15);
+    box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
 }
 /****************/
 .card {
