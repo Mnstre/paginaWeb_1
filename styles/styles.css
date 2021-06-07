@@ -114,6 +114,14 @@ body a{
 .containerEmail .contact{
     font-size: 2rem;
 }
+.btnEnviar {
+    color: white;
+    background-color: rgb(102, 195, 64);
+}
+.btnEnviar:hover {
+    color: white;
+    background-color: rgb(77, 148, 49);
+}
 /*************************************************************************/
 /*
 div.card h5 {

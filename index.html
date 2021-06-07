@@ -103,14 +103,14 @@
 				<a href="#" class="container containerCard containerCard-0 col-11 col-sm-6 col-xxl-5 text-dark text-center p-1 my-3 rounded-3 justify-content-center">
 					<div class="container my-5">
 						<h1 class="fw-bold user-select-none" id="cardTitle">Paneles Solares</h1>
-						<p class="w-100 user-select-none d-none d-sm-block">Acceso a energía eficiente a costo accesible</p>
+						<p class="w-100 user-select-none d-none d-sm-block">Acceso a energía limpia a costo accesible</p>
 						<button class="btn mt-4 mt-sm-0" style="background-color: rgb(102, 195, 64); color: white;">Entrar</button>
 					</div>
 				</a>
 				<a href="#" class="container containerCard containerCard-1 col-11 col-sm-6 col-xxl-5 text-dark text-center p-1 my-3 rounded-3">
-					<div class="container my-4">
+					<div class="container my-5">
 						<h1 class="fw-bold user-select-none mt-5 mt-sm-0" id="cardTitle">Calentadores Solares</h1>
-						<p class="w-100 user-select-none d-none d-sm-block">Uso eficiente  ahorro de energía para mantener un completo control de la temperatura del agua</p>
+						<p class="w-100 user-select-none d-none d-sm-block">Temperatura del agua sin utilizar tecnologías contaminantes</p>
 						<button class="btn m-3 mt-4 mt-sm-0" style="background-color: rgb(102, 195, 64); color: white;">Entrar</button>
 					</div>
 				</a>
@@ -165,17 +165,22 @@
 				</div>
 				<div class="col-12 col-sm-10 col-lg-8 my-auto mx-auto">
 					<div class="container">
-						<form>
+						<form action="mailto:gmiguel.503@gmail.com" method="get" enctype="text/plain">
 							<div class="mb-3">
-								<label for="remitenteEmail" class="form-label text-dark">Email:</label>
-								<input type="email" class="form-control" id="remitenteEmail" aria-describedby="emailHelp">
+								<label for="messageName" class="form-label text-dark">Nombre:</label>
+								<input type="text" class="form-control" name="messageName">
+							</div>
+							<div class="mb-3">
+								<label for="messageEmail" class="form-label text-dark">Email:</label>
+								<input type="email" class="form-control" name="messageEmail" id="messageEmail" aria-describedby="emailHelp">
 								<div id="emailHelp" class="form-text">Nunca compartiremos tu email con nadie más.</div>
 							</div>
 							<div class="mb-3">
-								<label for="remitenteTexto" class="form-label text-dark">Mensaje:</label>
-								<textarea class="form-control" id="remitenteTexto" rows="5"></textarea>
+								<label for="messageText" class="form-label text-dark">Mensaje:</label>
+								<textarea class="form-control" id="messageText" rows="3"></textarea>
 							</div>
-							<button type="button" class="btn btn-dark">Enviar</button>
+							<input type="reset" class="btn btn-outline-secondary" name="reset" value="Limpiar">
+							<input type="submit" class="btn btnEnviar" name="submit" value="Enviar">
 						</form>
 					</div>
 				</div>
@@ -204,7 +209,7 @@
 		<!-- ==== END Banner Location ==== -->
 		<div class="divider"></div>
 		<!-- ==== Footer ==== -->
-		<footer class="text-center text-lg-start bg-light text-muted mt-5">
+		<footer class="text-center text-lg-start bg-light text-muted">
 			<!-- Section: Social media -->
 			<!--section class="d-flex justify-content-center justify-content-lg-between p-1 border-bottom mx-4" >
 				<div class="m-2 d-none d-lg-block">
