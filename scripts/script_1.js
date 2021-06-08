@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded", function() {
   navbar_height = document.querySelector('.navbar').offsetHeight;
   document.body.style.paddingTop = navbar_height + 'px';
 
-  if(el_autohide){
+  if(el_autohide) {
     var last_scroll_top = 80;
     window.addEventListener('scroll', function() {
           let scroll_top = window.scrollY;
@@ -48,9 +48,22 @@ document.addEventListener("DOMContentLoaded", function() {
               el_autohide.classList.add('scrolled-down');
           }
           last_scroll_top = scroll_top;
-    }); 
+    });
     // window.addEventListener
   }
   // if
 
 });
+///////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////
+weekday();
+
+function weekday() {
+  var d = new Date();
+  if(getDay() == 0) { document.getElementById("Lunes").classList.add('OpeningDay'); }
+  if(getDay() == 1) { document.getElementById("Martes").classList.add('OpeningDay'); }
+  if(getDay() == 2) { document.getElementById("Miercoles").classList.add('OpeningDay'); }
+  if(getDay() == 3) { document.getElementById("Jueves").classList.add('OpeningDay'); }
+  if(getDay() == 4) { document.getElementById("Viernes").classList.add('OpeningDay'); }
+  if(getDay() == 5) { document.getElementById("Sabado").classList.add('OpeningDay'); }
+}
