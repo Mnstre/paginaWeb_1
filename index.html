@@ -48,9 +48,9 @@
 								data-toggle="dropdown" style="color: rgba(102, 195, 64);">Productos</a>
 							<ul class="dropdown-menu" aria-labelledby="products">
 								<li><a href="products/paneles.html" class="dropdown-item nav-link" style="color: rgba(102, 195, 64);">Paneles Solares</a></li>
-								<li><a href="https://ubidots.com/blog/" class="dropdown-item nav-link" style="color: rgba(102, 195, 64);">Calentadores Solares</a></li>
-								<li><a href="https://ubidots.com/community/" class="dropdown-item nav-link" style="color: rgba(102, 195, 64);">Fotocopiadoras</a></li>
-								<li><a href="https://hackster.io/ubidots/projects" class="dropdown-item nav-link" style="color: rgba(102, 195, 64);">Cámaras de Seguridad</a></li>
+								<li><a href="products/calentadores.html" class="dropdown-item nav-link" style="color: rgba(102, 195, 64);">Calentadores Solares</a></li>
+								<li><a href="products/copiadoras.html" class="dropdown-item nav-link" style="color: rgba(102, 195, 64);">Fotocopiadoras</a></li>
+								<li><a href="products/camaras.html" class="dropdown-item nav-link" style="color: rgba(102, 195, 64);">Cámaras de Seguridad</a></li>
 							</ul>
 						</div>
 					<!--
@@ -96,42 +96,32 @@
 		</div>
 		<!-- ==== Main Header ==== -->
 		<div class="divider"></div>
-		<div class="">
-			<ul class="btn-toggle-nav list-unstyled pb-1 small">
-				<li><div class="" id="Lunes">Lunes 8:00am - 4:00pm</div></li>
-				<li><div class="" id="Martes">Martes 8:00am - 4:00pm</div></li>
-				<li><div class="" id="Miercoles">Miércoles 8:00am - 4:00pm</div></li>
-				<li><div class="" id="Jueves">Jueves 8:00am - 4:00pm</div></li>
-				<li><div class="" id="Viernes">Viernes 8:00am - 4:00pm</div></li>
-				<li><div class="" id="Sabado">Sábado 8:00am - 4:00pm</div></li>
-			</ul>
-		</div>
 		<!--  ==== CARDS ====  -->
 		<div class="container justify-content-center p-5">
 			<h1 class="text-center p-3">Consulte nuestros diferentes productos:</h1>
 			<div class="row align-items-center justify-content-center">
-				<a href="#" class="container containerCard containerCard-0 col-11 col-sm-6 col-xxl-5 text-dark text-center p-1 my-3 rounded-3 justify-content-center">
+				<a href="products/paneles.html" class="container containerCard containerCard-0 col-11 col-sm-6 col-xxl-5 text-dark text-center p-1 my-3 rounded-3 justify-content-center">
 					<div class="container my-5">
 						<h1 class="fw-bold user-select-none" id="cardTitle">Paneles Solares</h1>
 						<p class="w-100 user-select-none d-none d-sm-block">Acceso a energía limpia a costo accesible</p>
 						<button class="btn mt-4 mt-sm-0" style="background-color: rgb(102, 195, 64); color: white;">Entrar</button>
 					</div>
 				</a>
-				<a href="#" class="container containerCard containerCard-1 col-11 col-sm-6 col-xxl-5 text-dark text-center p-1 my-3 rounded-3">
+				<a href="products/calentadores.html" class="container containerCard containerCard-1 col-11 col-sm-6 col-xxl-5 text-dark text-center p-1 my-3 rounded-3">
 					<div class="container my-5">
 						<h1 class="fw-bold user-select-none mt-5 mt-sm-0" id="cardTitle">Calentadores Solares</h1>
 						<p class="w-100 user-select-none d-none d-sm-block">Temperatura del agua sin utilizar tecnologías contaminantes</p>
 						<button class="btn m-3 mt-4 mt-sm-0" style="background-color: rgb(102, 195, 64); color: white;">Entrar</button>
 					</div>
 				</a>
-				<a href="#" class="container containerCard containerCard-2 col-11 col-sm-6 col-xxl-5 text-dark text-center p-1 my-3 rounded-3">
+				<a href="products/copiadoras.html" class="container containerCard containerCard-2 col-11 col-sm-6 col-xxl-5 text-dark text-center p-1 my-3 rounded-3">
 					<div class="container my-5">
 						<h1 class="fw-bold user-select-none mt-3 mt-sm-0" id="cardTitle">Fotocopiadoras</h1>
 						<p class="w-100 user-select-none d-none d-sm-block">Acceso a energía eficiente a costo accesible.</p>
 						<button class="btn m-3 mt-5 mt-sm-0" style="background-color: rgb(102, 195, 64); color: white;">Entrar</button>
 					</div>
 				</a>
-				<a href="#" class="container containerCard containerCard-3 col-11 col-sm-6 col-xxl-5 text-dark text-center p-1 my-3 rounded-3">
+				<a href="products/camaras.html" class="container containerCard containerCard-3 col-11 col-sm-6 col-xxl-5 text-dark text-center p-1 my-3 rounded-3">
 					<div class="container my-4">
 						<h1 class="fw-bold user-select-none mt-5 mt-sm-0" id="cardTitle">Cámaras de Seguridad</h1>
 						<p class="w-100 user-select-none d-none d-sm-block">Acceso a energía eficiente a costo accesible.</p>
@@ -144,15 +134,17 @@
 		<div class="divider"></div>
 		<!-- ==== Banner Redes ==== -->
 		<div class="container-fluid bg-dark py-1 px-auto">
-			<div class="container">
-				<div class="row">
-					<div class="col-auto my-auto">
-						<h1 class="fw-bold">Síguenos:</h1>
-					</div>
-					<div class="col ps-3" style="border-left: 3px dashed #9999;">
-						<div class="row">
-							<img src="media/icons/icono_facebook.png" class="p-3" style="width: 100px;">
-							<img src="media/icons/icono_instagram.png" class="p-3" style="width: 100px;">
+			<div class="container w-50 m-auto">
+				<div class="align-content-center">
+					<div class="row">
+						<div class="col-auto my-auto">
+							<h1 class="fw-bold">Síguenos:</h1>
+						</div>
+						<div class="col-5" style="border-left: 3px dashed #9999;">
+							<div class="row">
+								<img src="media/icons/icono_facebook.png" class="p-3" style="width: 80px;">
+								<img src="media/icons/icono_instagram.png" class="p-3" style="width: 80px;">
+							</div>
 						</div>
 					</div>
 				</div>
@@ -161,7 +153,7 @@
 		<!-- ==== END Banner Redes ==== -->
 		<div class="divider"></div>
 		<!-- ==== Banner Whatsapp ==== -->
-		<div class="px-4 py-5 my-5 text-center w-50 m-auto">
+		<div class="px-4 py-4 text-center w-50 m-auto">
 			<!--img class="d-block mx-auto my-4" src="media/icons/logo_b.png" alt="" width="242" height="167"-->
 			<div class="align-content-center">
 				<h1 class="p-4">Chatea con nosotros:</h1>
@@ -180,13 +172,13 @@
 					</ul>
 				</div-->
 				<div class="">
-					<ul class="btn-toggle-nav list-unstyled pb-1 small">
-						<li><div class="" id="Lunes">Lunes 8:00am - 4:00pm</div></li>
-						<li><div class="" id="Martes">Martes 8:00am - 4:00pm</div></li>
-						<li><div class="" id="Miercoles">Miércoles 8:00am - 4:00pm</div></li>
-						<li><div class="" id="Jueves">Jueves 8:00am - 4:00pm</div></li>
-						<li><div class="" id="Viernes">Viernes 8:00am - 4:00pm</div></li>
-						<li><div class="" id="Sabado">Sábado 8:00am - 4:00pm</div></li>
+					<ul class="btn-toggle-nav list-unstyled pt-3 pb-1 small">
+						<li><div class="text-dark" id="Lunes">Lunes 8:00am - 4:00pm</div></li>
+						<li><div class="text-dark" id="Martes">Martes 8:00am - 4:00pm</div></li>
+						<li><div class="text-dark" id="Miercoles">Miércoles 8:00am - 4:00pm</div></li>
+						<li><div class="text-dark" id="Jueves">Jueves 8:00am - 4:00pm</div></li>
+						<li><div class="text-dark" id="Viernes">Viernes 8:00am - 4:00pm</div></li>
+						<li><div class="text-dark" id="Sabado">Sábado 8:00am - 4:00pm</div></li>
 					</ul>
 				</div>
 			</div>
@@ -202,7 +194,7 @@
 		<!-- ==== Banner Email ==== -->
 		<div class="containerEmail container-fluid align-content-center">
 			<div class="row align-content-center col-md-8 py-5 mx-md-auto" style="background-color: rgb( 220, 220, 220);">
-				<div class="col-10 col-sm-8 col-lg-4 my-auto mx-auto ps-md-5">
+				<div class="col-10 col-sm-10 col-lg-4 my-auto mx-auto ps-md-5">
 					<p class="contact pb-2 pb-md-5 d-none d-md-block" style="color: gray;">Contáctanos:</p>
 					<p class="contact pb-2 pb-md-5 d-block d-md-none" style="color: gray;">Contáctanos:</p>
 					<p class="text-muted">

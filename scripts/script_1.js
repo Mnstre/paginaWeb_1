@@ -1,37 +1,10 @@
-// When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
-/*
-window.onscroll = function() {
-    scrollFunction()
-};
-
-function scrollFunction() {
-  if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-    document.getElementById("navbar").style.padding = "30px 10px";
-    document.getElementById("logo").style.fontSize = "25px";
-  } else {
-    document.getElementById("navbar").style.padding = "80px 10px";
-    document.getElementById("logo").style.fontSize = "35px";
-  }
-}
-*/
-// Add slideDown animation to Bootstrap dropdown when expanding.
-//var drop_1 = document.getElementById('drop1');
-
-/*
-$('.dropdown').on('show.bs.dropdown', function() {
-    $(this).find('.dropdown-menu').first().stop(true, true).slideDown();
-  });
-
-  // Add slideUp animation to Bootstrap dropdown when collapsing.
-  $('.dropdown').on('hide.bs.dropdown', function() {
-    $(this).find('.dropdown-menu').first().stop(true, true).slideUp();
-  });*/
 ///////////////////////////////////////////////////////////////////////////////////////
+//                              --  JavaScript  --                                   //
 ///////////////////////////////////////////////////////////////////////////////////////
 document.addEventListener("DOMContentLoaded", function() {
   el_autohide = document.querySelector('.autohide');
   
-  // add padding-top to bady (if necessary)
+  // add padding-top to body (if necessary)
   navbar_height = document.querySelector('.navbar').offsetHeight;
   document.body.style.paddingTop = navbar_height + 'px';
 
