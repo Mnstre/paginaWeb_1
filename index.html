@@ -95,7 +95,6 @@
 			</div>
 		</div>
 		<!-- ==== Main Header ==== -->
-		<div class="divider"></div>
 		<!--  ==== CARDS ====  -->
 		<div class="container justify-content-center p-5">
 			<h1 class="text-center p-3">Consulte nuestros diferentes productos:</h1>
@@ -131,7 +130,7 @@
 			</div>
 		</div>
 		<!--  ==== END CARDS ====  -->
-		<div class="divider"></div>
+		<!--div class="divider"></div-->
 		<!-- ==== Banner Redes ==== -->
 		<div class="container-fluid bg-dark py-1 px-auto">
 			<div class="container w-50 m-auto">
@@ -151,14 +150,14 @@
 			</div>
 		</div>
 		<!-- ==== END Banner Redes ==== -->
-		<div class="divider"></div>
 		<!-- ==== Banner Whatsapp ==== -->
 		<div class="px-4 py-4 text-center w-50 m-auto">
 			<!--img class="d-block mx-auto my-4" src="media/icons/logo_b.png" alt="" width="242" height="167"-->
 			<div class="container-fluid">
-				<h1 class="p-4">Chatea con nosotros:</h1>
+				<h1 class="p-5">Chatea con nosotros:</h1>
 				<p class="text-muted pb-4">Mándanos un mensaje directamente a nuestro chat de Whatsapp y mantén comunicacion con nosotros de manera fácil y rápida</p>
-				<a class="btn btn-outline-success" href="#"><i class="fab fa-whatsapp mx-1 me-2"></i>Whatsapp</a>
+				<a class="btn btn-outline-success mb-5" href="#"><i class="fab fa-whatsapp mx-1 me-2"></i>Whatsapp</a>
+				<hr style="color: black;">
 				<h1 class="p-5 pb-1">Horario:</h1>
 				<!--button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#dashboard-collapse" aria-expanded="false" aria-controls="dashboard-collapse">
 					Horarios de Atención
@@ -171,7 +170,7 @@
 						<li><a href="#" class="link-dark rounded">Annually</a></li>
 					</ul>
 				</div-->
-				<div class="">
+				<div class="pb-5">
 					<ul class="btn-toggle-nav list-unstyled pt-3 pb-1 small">
 						<li><div class="text-dark" id="Lunes">Lunes 8:00am - 4:00pm</div></li>
 						<li><div class="text-dark" id="Martes">Martes 8:00am - 4:00pm</div></li>
@@ -190,22 +189,31 @@
 			</button>
 		</div-->
 		<!-- ==== END Banner Location ==== -->
-		<div class="divider"></div>
 		<!-- ==== Banner Email ==== -->
-		<div class="containerEmail container-fluid align-content-center">
-			<div class="row align-content-center col-md-5 py-5 mx-md-auto" style="background-color: rgb( 220, 220, 220);">
-				<div class="col-10 col-sm-10 col-lg-4 my-auto mx-auto ps-md-5">
-					<p class="contact pb-2 pb-md-5 d-none d-md-block" style="color: gray;">Contáctanos:</p>
-					<p class="contact pb-2 pb-md-5 d-block d-md-none" style="color: gray;">Contáctanos:</p>
+		<div class="containerEmail container-fluid align-content-center py-5" style="background-color: rgb( 220, 220, 220);">
+			<div class="row col-7 align-content-center mx-auto">
+				<p class="contact pb-2 pb-md-5 text-center" style="color: gray;">Contáctanos:</p>
+				<div class="col-6 col-sm-10 col-lg-6 my-auto mx-auto ps-md-5">
 					<p class="text-muted">
 						Envíanos un mensaje directamente a nosotros y reciba atención personalizada a traves de correo electrónico.
 					</p>
-					<p class="text-muted pb-4">
+					<p class="text-muted">
 						Reciba respuesta a sus dudas, o  realize una cotización con nosotros. Será un placer atenderle.
 					</p>
 				</div>
-				<div class="col-12 col-sm-10 col-lg-4 my-auto">
-					<button type="button" class="btn btn-success px-5 py-3">Contactar</button>
+				<div class="col-6 col-sm-10 col-lg-6 my-auto">
+					<form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/{form_id}" method="post">
+						<fieldset id="fs-frm-inputs">
+						  <label for="full-name">Full Name</label>
+						  <input type="text" name="name" id="full-name" placeholder="First and Last" required="">
+						  <label for="email-address">Email Address</label>
+						  <input type="email" name="_replyto" id="email-address" placeholder="email@domain.tld" required="">
+						  <label for="message">Message</label>
+						  <textarea rows="5" name="message" id="message" placeholder="Aenean lacinia bibendum nulla sed consectetur. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donec ullamcorper nulla non metus auctor fringilla nullam quis risus." required=""></textarea>
+						  <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
+						</fieldset>
+						<input type="submit" value="Submit">
+					  </form>
 				</div>
 			</div>
 		</div>
