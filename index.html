@@ -80,12 +80,50 @@
 			</div>
 		</nav>
 		
-		<!-- ==== Main Header ==== -->
-		<div class="container-fluid mainHeader bg-success py-5 text-center shadow-1-strong text-white">
+		<!-- ==== CAROUSEL ==== -->
+		<div id="mainCarousel" class="carousel slide" data-bs-ride="carousel">
+			<div class="carousel-indicators">
+				<button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+				<button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+				<button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+			</div>
+			<div class="carousel-inner">
+				<div class="carousel-item active" style="height:30rem">
+					<img src="media/images/sample1.jpg" class="d-block h-100" alt="...">
+					<div class="carousel-caption d-none d-md-block">
+						<h5>First Slide Label</h5>
+						<p>Aqui tiene que ir texto para el PRIMER Slider</p>
+					</div>
+				</div>
+				<div class="carousel-item" style="height:30rem">
+					<img src="media/images/sample2.jpg" class="d-block h-100" alt="...">
+					<div class="carousel-caption d-none d-md-block">
+						<h5>First Slide Label</h5>
+						<p>Aqui tiene que ir texto para el SEGUNDO Slider</p>
+					</div>
+				</div>
+				<div class="carousel-item" style="height:30rem">
+					<img src="media/images/sample4.jpg" class="d-block h-100" alt="...">
+					<div class="carousel-caption d-none d-md-block">
+						<h5>First Slide Label</h5>
+						<p>Aqui tiene que ir texto para el TERCER Slider</p>
+					</div>
+				</div>
+			</div>
+			<button class="carousel-control-prev" type="button" data-bs-target="#mainCarousel" data-bs-slide="prev">
+				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				<span class="visually-hidden">Previous</span>
+			</button>
+			<button class="carousel-control-next" type="button" data-bs-target="#mainCarousel" data-bs-slide="next">
+				<span class="carousel-control-next-icon" aria-hidden="true"></span>
+				<span class="visually-hidden">Next</span>
+			</button>
+		</div>
+		<!--div class="container-fluid mainHeader bg-success py-5 text-center shadow-1-strong text-white">
 			<div class="container pt-5">
-				<!--h1 class="mb-5 p-2 h2 fs-1 py-5 text-start">
+				<h1 class="mb-5 p-2 h2 fs-1 py-5 text-start">
 					MHLE - Eco-Tecnologías y Servicios Integrados
-				</h1-->
+				</h1>
 				<h1 class="mb-5 p-3 h2 fs-1 pt-5 text-end">
 					Brindando la tecnología limpia del futuro
 				</h1>
@@ -93,9 +131,9 @@
 					Somos una empresa orgullosamente Nayarita, nuestro principal objetivo es darte acceso a tecnologías limpias, brindando ahorro y bienestar.
 				</p>
 			</div>
-		</div>
-		<!-- ==== Main Header ==== -->
-		<div class="divider"></div>
+		</div-->
+		<!-- ==== END CAROUSEL ==== -->
+		<!--div class="divider"></div-->
 		<!--  ==== CARDS ====  -->
 		<div class="container justify-content-center p-5">
 			<h1 class="text-center p-3">Consulte nuestros diferentes productos:</h1>
@@ -131,7 +169,7 @@
 			</div>
 		</div>
 		<!--  ==== END CARDS ====  -->
-		<div class="divider"></div>
+		<!--div class="divider"></div-->
 		<!-- ==== Banner Redes ==== -->
 		<div class="container-fluid bg-dark py-1 px-auto">
 			<div class="container w-50 m-auto">
@@ -151,7 +189,7 @@
 			</div>
 		</div>
 		<!-- ==== END Banner Redes ==== -->
-		<div class="divider"></div>
+		<!--div class="divider"></div-->
 		<!-- ==== Banner Whatsapp ==== -->
 		<div class="px-4 py-4 text-center w-50 m-auto">
 			<!--img class="d-block mx-auto my-4" src="media/icons/logo_b.png" alt="" width="242" height="167"-->
@@ -190,7 +228,7 @@
 			</button>
 		</div-->
 		<!-- ==== END Banner Location ==== -->
-		<div class="divider"></div>
+		<!--div class="divider"></div-->
 		<!-- ==== Banner Email ==== -->
 		<div class="containerEmail container-fluid align-content-center">
 			<div class="row align-content-center col-md-8 py-5 mx-md-auto" style="background-color: rgb( 220, 220, 220);">
@@ -228,7 +266,7 @@
 			</div>
 		</div>
 		<!-- ==== END Banner Email ==== -->
-		<div class="divider"></div>
+		<!--div class="divider"></div-->
 		<!-- ==== Footer ==== -->
 		<footer class="text-center text-lg-start bg-light text-muted">
 			<!-- Section: Social media -->
@@ -348,5 +386,8 @@
 		<script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
 		<script src="https://getbootstrap.com/docs/4.0/assets/js/vendor/popper.min.js"></script>
 		<script src="https://getbootstrap.com/docs/4.0/dist/js/bootstrap.min.js"></script>
+		<script src="../../assets/js/vendor/holder.min.js"></script>
+		<!---->
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 	</body>
 </html>
