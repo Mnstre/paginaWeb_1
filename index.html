@@ -200,7 +200,7 @@
 				<p class="text-muted pb-4">Mándanos un mensaje directamente a nuestro chat de Whatsapp y mantén comunicacion con nosotros de manera fácil y rápida</p>
 				<a class="btn btn-outline-success mb-5" href="#"><i class="fab fa-whatsapp mx-1 me-2"></i>Whatsapp</a>
 				<hr style="color: black;">
-				<h1 class="p-5 pb-1">Horario:</h1>
+				<!--h1 class="p-5 pb-1">Horario:</h1-->
 				<!--button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#dashboard-collapse" aria-expanded="false" aria-controls="dashboard-collapse">
 					Horarios de Atención
 				</button>
@@ -212,7 +212,7 @@
 						<li><a href="#" class="link-dark rounded">Annually</a></li>
 					</ul>
 				</div-->
-				<div class="pb-5">
+				<!--div class="pb-5">
 					<ul class="btn-toggle-nav list-unstyled pt-3 pb-1 small">
 						<li><div class="text-dark" id="Lunes">Lunes 8:00am - 4:00pm</div></li>
 						<li><div class="text-dark" id="Martes">Martes 8:00am - 4:00pm</div></li>
@@ -221,7 +221,7 @@
 						<li><div class="text-dark" id="Viernes">Viernes 8:00am - 4:00pm</div></li>
 						<li><div class="text-dark" id="Sabado">Sábado 8:00am - 4:00pm</div></li>
 					</ul>
-				</div>
+				</div-->
 			</div>
 		</div>
 		<!-- ==== EMAIL Button ==== -->
@@ -245,6 +245,17 @@
 					</p>
 				</div>
 				<div class="col-6 col-sm-10 col-lg-6 my-auto">
+					<form action="mailto:gmiguel.503@gmail.com" method="GET" enctype="text/plain">
+						<label for="name">Full Name: 
+							<input name="name" type="text" id="name"/>
+						</label>
+						<label name="email">Email: 
+							<input type="text" name="email" if="email" />
+						</label>
+						<textarea name="comments" rows="12" cols="35">Send your message to us.</textarea>
+						<input type="submit" name="submit" value="Send"/>
+						<input type="reset" name="reset" value="Clear Form"/>
+					</form>
 					<!--form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="contact_form_handler.php" method="post">
 						
 						<label for="name">Full Name</label>
@@ -255,14 +266,14 @@
 						<textarea rows="5" name="message" id="message" placeholder="Aenean lacinia bibendum nulla sed consectetur." required=""></textarea>
 						
 						<input type="submit" value="Submit">
-					</form>
-					<script languague="Javascript">
+					</form-->
+					<!--script languague="Javascript">
 						var frmvalidator = new Validator("simple-contact-form");
 						frmvalidator.addValidation("name", "req", "Please provide your name");
 						frmvalidator.addValidation("email", "req", "Please provide your email");
 						frmvalidator.addValidation("email", "email", "Please enter a valid email address");
 					</script-->
-					<form method="post" name="contact_form" action="contact_form_handler.php">
+					<!--form method="post" name="contact_form" action="contact_form_handler.php">
 						Your Name:
 						<input type="text" name="name">
 						Email Address:
@@ -277,10 +288,7 @@
 						frmvalidator.addValidation("name","req","Please provide your name");
 						frmvalidator.addValidation("email","req","Please provide your email");
 						frmvalidator.addValidation("email","email","Please enter a valid email address");
-					</script>
-					<?php
-						echo
-					?>
+					</script-->
 				</div>
 			</div>
 		</div>
