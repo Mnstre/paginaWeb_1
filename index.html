@@ -7,7 +7,7 @@
 		<meta name="description" content="">
 		<meta name="author" content="">
 		<meta name="theme-color" content="#65c340">
-		<title>Empresa :: HOME</title>
+		<title>MHLE - EcoTecnologías y Servicios Integrados</title>
 		<link href="media/icons/logo_w.png" rel="icon" data-n-head="true" type="image/x-icon">
 		<!-- Redirigir busquedas a una pagina web principal -->
 		<link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/navbar-top-fixed/">
@@ -23,7 +23,7 @@
 		<meta http-equiv="Pragma" content="no-cache" />
 		<meta http-equiv="Expires" content="-1" />
 		<!-- Font Awesome -->
-		<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet"/>
+			<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet"/>
 	</head>
 	<!--==============================================================================================================================-->
 	<body class="justify-content-center ">
@@ -82,73 +82,65 @@
 		</nav>
 		<!-- ==== CAROUSEL ==== -->
 		<!--div class="container"-->
-		<div id="mainCarousel" class="carousel slide container-fluid" data-bs-ride="carousel" style="background-color:white;padding-left: 0px;padding-right: 0px;">
-			<div class="carousel-indicators">
-				<button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-				<button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-				<button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+		<div class="container-fluid">
+			<div class="row">
+				<div id="mainCarousel" class="carousel slide col-10 col-lg-9 col-xxl-5 align-content-center mx-auto" data-bs-ride="carousel" style="background-color:white">
+					<div class="carousel-indicators">
+						<button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+						<button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+						<button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+					</div>
+					<div class="carousel-inner">
+						<div class="carousel-item active">
+							<img src="media/images/flayer_web1.png" class="d-block mx-auto img-fluid" alt="...">
+							<!--div class="carousel-caption d-none d-md-block">
+								<h5>First Slide Label</h5>
+								<p>Aqui tiene que ir texto para el PRIMER Slider</p>
+							</div-->
+						</div>
+						<div class="carousel-item">
+							<img src="media/images/flayer_web2.png" class="d-block img-fluid mx-auto" alt="...">
+							<!--div class="carousel-caption d-none d-md-block">
+								<h5>First Slide Label</h5>
+								<p>Aqui tiene que ir texto para el SEGUNDO Slider</p>
+							</div-->
+						</div>
+						<div class="carousel-item">
+							<img src="media/images/flayer_web3.png" class="d-block img-fluid mx-auto" alt="...">
+							<!--div class="carousel-caption d-none d-md-block">
+								<h5>First Slide Label</h5>
+								<p>Aqui tiene que ir texto para el TERCER Slider</p>
+							</div-->
+						</div>
+					</div>
+					<button class="carousel-control-prev" type="button" data-bs-target="#mainCarousel" data-bs-slide="prev">
+						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+						<span class="visually-hidden">Previous</span>
+					</button>
+					<button class="carousel-control-next" type="button" data-bs-target="#mainCarousel" data-bs-slide="next">
+						<span class="carousel-control-next-icon" aria-hidden="true"></span>
+						<span class="visually-hidden">Next</span>
+					</button>
+				</div>
 			</div>
-			<div class="carousel-inner">
-				<div class="carousel-item active">
-					<img src="media/images/sample1.jpg" class="d-block img-fluid" alt="..." height="200">
-					<!--div class="carousel-caption d-none d-md-block">
-						<h5>First Slide Label</h5>
-						<p>Aqui tiene que ir texto para el PRIMER Slider</p>
-					</div-->
-				</div>
-				<div class="carousel-item">
-					<img src="media/images/sample2.jpg" class="img-fluid" alt="...">
-					<!--div class="carousel-caption d-none d-md-block">
-						<h5>First Slide Label</h5>
-						<p>Aqui tiene que ir texto para el SEGUNDO Slider</p>
-					</div-->
-				</div>
-				<div class="carousel-item">
-					<img src="media/images/sample4.jpg" class="img-fluid" alt="...">
-					<!--div class="carousel-caption d-none d-md-block">
-						<h5>First Slide Label</h5>
-						<p>Aqui tiene que ir texto para el TERCER Slider</p>
-					</div-->
-				</div>
-			</div>
-			<button class="carousel-control-prev" type="button" data-bs-target="#mainCarousel" data-bs-slide="prev">
-				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-				<span class="visually-hidden">Previous</span>
-			</button>
-			<button class="carousel-control-next" type="button" data-bs-target="#mainCarousel" data-bs-slide="next">
-				<span class="carousel-control-next-icon" aria-hidden="true"></span>
-				<span class="visually-hidden">Next</span>
-			</button>
 		</div>
-		<!--/div-->
-		<!--div class="container-fluid mainHeader bg-success py-5 text-center shadow-1-strong text-white">
-			<div class="container pt-5">
-				<h1 class="mb-5 p-2 h2 fs-1 py-5 text-start">
-					MHLE - Eco-Tecnologías y Servicios Integrados
-				</h1>
-				<h1 class="mb-5 p-3 h2 fs-1 pt-5 text-end">
-					Brindando la tecnología limpia del futuro
-				</h1>
-				<p class="text-end p-3">
-					Somos una empresa orgullosamente Nayarita, nuestro principal objetivo es darte acceso a tecnologías limpias, brindando ahorro y bienestar.
-				</p>
-			</div>
-		</div-->
 		<!-- ==== END CAROUSEL ==== -->
 		<!--div class="divider"></div-->
 		<!-- ==== Banner CONTACTO ==== -->
-		<div class="px-4 py-4 pb-5 align-content-center text-center m-auto col-12 col-lg-6">
+		<div class="px-4 py-4 pb-5 align-content-center text-center m-auto col-12">
 			<!--img class="d-block mx-auto my-4" src="media/icons/logo_b.png" alt="" width="242" height="167"-->
-			<div class="container">
-				<h1 class="pt-5 pb-3">Contáctenos:</h1>
-				<p class="text-muted text-center text-lg-end pb-4">
-					Reciba atención personalizada a traves de correo electrónico. Con gusto resolveremos sus dudas, o  realize una cotización de nuestros productos.
+			<div class="container col-5 text-center">
+				<h1 class="pt-5 pb-3">Póngase en contacto con nosotros:</h1>
+				<p class="text-muted text-center pb-4">
+					Reciba atención personalizada a traves de correo electrónico y por teléfono. Con gusto resolveremos sus dudas, o  realize una cotización de nuestros productos.
 				</p>
+			</div>
+			<div class="container col-8">
 				<div class="row">
 					<div class="card-group">
 						<div class="card p-4">
-							<div class="col-10 col-lg-6 my-auto mx-auto">
-								<p>Contácto por teléfono y por Whatsapp:</p>
+							<div class="col-12 col-lg-6 my-auto mx-auto">
+								<p>Télefono y Whatsapp:</p>
 								<p class="text-muted text-center">311-266-0567</p>
 								<p class="text-muted text-center">311-141-7289</p>
 								<p class="text-muted text-center">384-126-2160</p>
@@ -159,7 +151,7 @@
 						</div>
 						<div class="card p-4">
 							<form action="mailto:gmiguel.503@gmail.com" method="GET" enctype="text/plain">
-								<button type="submit" class="btn btn-primary">Mandar Correo</button>
+								<a type="submit" class="btn btn-outline-primary"><i class="fa fa-envelope-o mx-1 me-2" aria-hidden="true"></i>Mandar Correo</a>
 							</form>
 						</div>
 					</div>
