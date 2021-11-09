@@ -57,7 +57,7 @@ body a{
 .containerCard-0 { background-image: url(../media/images/card_panel.PNG); }
 .containerCard-1 { background-image: url(../media/images/card_calentador.jpg); }
 .containerCard-2 { background-image: url(../media/images/card_copiadora.jpg); }
-.containerCard-3 { background-image: url(../media/images/card_camara.jpg); }
+.containerCard-3 { background-image: url(../media/images/card_camara.jpg);}
 .containerCard p {
     color: rgb(235, 235, 235);
     background-color: rgba(0, 0, 0, 0.4);
@@ -83,10 +83,6 @@ body a{
 #cardTitle {
     color: rgba(102, 195, 64, 1);
     text-shadow: 1px 1px #0000009f
-}
-/****************/
-#cardContacto {
-    
 }
 /****************/
 /*
@@ -144,9 +140,6 @@ div.card p {
 .responsive {
     width: 15%;
     height: auto;
-}
-h1 {
-    color:rgb(150, 150, 150);
 }
 .col-md-auto a{
     color:rgb(180, 180, 180);
@@ -211,9 +204,9 @@ footer {
 .fw-semibold { font-weight: 600; }
 .lh-tight { line-height: 1.25; }
 /*****************************************************/
-/**************** SECTIONS FONT SIZES ****************/
-.sectionPDP{
-    font-size:small;
+/********************  FONT SIZES ********************/
+.textTitle{
+    color: rgb(110,110,110);
 }
 /*****************************************************/
 /*****************************************************/
