@@ -189,7 +189,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-auto my-auto">
-						<h1 class="fw-bold display-4" style="color: rgb(180,180,180);">Síguenos:</h1>
+						<h1 class="fw-bold display-4" style="color: rgb(180,180,180);" unselectable="on">Síguenos:</h1>
 					</div>
 					<div class="col-5" style="border-left: 3px dashed #9999;">
 						<div class="row">
@@ -214,9 +214,9 @@
 			<div class="container col-12 col-lg-8 pb-4">
 				<div class="row">
 					<div class="card-group">
-						<div class="card cardContacto border-success p-4">
-							<div class="col-12 col-md-6 my-auto mx-auto">
-								<p class="fs-5 fw-bold" style="color: rgb(110,110,110);">Télefono y Whatsapp:</p>
+						<div class="card cardContacto border-success py-4">
+							<div class="my-auto mx-auto fs-5">
+								<p class="fs-3 fw-bold" style="color: rgb(110,110,110);">Télefono y Whatsapp:</p>
 								<p class="text-muted text-center">311-266-0567</p>
 								<p class="text-muted text-center">311-141-7289</p>
 								<p class="text-muted text-center">384-126-2160</p>
@@ -225,15 +225,18 @@
 								<a class="btn btn-outline-success" href="#"><i class="fab fa-whatsapp mx-1 me-2"></i>Whatsapp</a>
 							</div>	
 						</div>
-						<div class="card cardContacto border-success p-4">
-							<div class="col-12 col-md-6 my-auto mx-auto">
-								<p class="fs-5 fw-bold" style="color: rgb(110,110,110);">Correo Electrónico:</p>
+						<div class="card cardContacto border-success py-4">
+							<div class="my-auto fs-5">
+								<p class="fs-3 fw-bold" style="color: rgb(110,110,110);">Correo Electrónico:</p>
 								<p class="text-muted text-center">mhle.ecotecnologias@gmail.com</p>
 								<p class="text-muted text-center">sayulloera@gmail.com</p>
 							</div>
-							<form action="mailto:gmiguel.503@gmail.com" method="GET" enctype="text/plain" class="my-4">
-								<a type="submit" class="btn btn-outline-primary"><i class="fa fa-envelope-o mx-1 me-2" aria-hidden="true"></i>Mandar Correo</a>
-							</form>
+							<!--form action="mailto:gmiguel.503@gmail.com" method="GET" enctype="text/plain" class="my-4">
+								<a type="submit" class="btn btn-outline-primary"><i class="fa fa-envelope-o mx-1" aria-hidden="true"></i>Mandar Correo</a>
+							</form-->
+							<div class="my-4 mx-auto">
+								<a href="mailto:gmiguel.503@gmail.com?Subject=Contacto%20con%20MHLE" class="btn btn-outline-primary">Mandar Correo</a>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -242,7 +245,7 @@
 		<!-- ==== END Banner CONTACTO ==== -->
 		<!--div class="divider"></div-->
 		<!-- ==== Footer ==== -->
-		<footer class="text-start bg-light text-muted sectionPDP">
+		<footer class="text-start text-muted sectionPDP" style="background-color: rgba( 0, 0, 0, 0.05);">
 			<!-- Section: Social media -->
 			<!--section class="d-flex justify-content-center justify-content-lg-between p-1 border-bottom mx-4" >
 				<div class="m-2 d-none d-lg-block">
@@ -269,28 +272,27 @@
 								<img src="media/icons/logo_completo_navbar.png">
 							</h6>
 							<p>
-								MHLE, empresa nayarita creada en 2021 en el estado de Nayarit. Buscamos
-								entrar al mercado de energías limpias a través de servicio técnico
-								especializado, en beneficio del bienestar de la sociedad.
+								MHLE, es una empresa familiar nayarita . Buscamos entrar al mercado
+								de energías limpias y proveer servicios de soporte técnico especializado.
 							</p>
 						</div>
 						<!--div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4"-->
 						<div class="col-12 col-md-5 col-lg-2 col-xl-2 mx-auto mb-4">
 							<!-- Links -->
 							<h6 class="text-uppercase fw-bold mb-4 text-center">
-								Products
+								Productos
 							</h6>
 							<p>
-								<a href="#!" class="text-reset">Paneles Solares</a>
+								<button href="#!" class="btn btn-light" disabled>Multifuncionales</button>
 							</p>
 							<p>
-								<a href="#!" class="text-reset">Calentadores Solares</a>
+								<button class="btn btn-light" disabled>Paneles Solares</button>
 							</p>
 							<p>
-								<a href="#!" class="text-reset">Fotocopiadoras</a>
+								<button href="#!" class="btn btn-light" disabled>Calentadores Solares</button>
 							</p>
 							<p>
-								<a href="#!" class="text-reset">Cámaras de Seguridad</a>
+								<button href="#!" class="btn btn-light" disabled>Cámaras de Seguridad</button>
 							</p>
 						</div>
 						<!--div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4"-->
@@ -349,7 +351,7 @@
 				</div>
 			</section>
 			<!-- Copyright -->
-			<div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);">
+			<div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.1);">
 				© 2021 Copyright:
 				<a class="text-reset fw-bold" href="https://mhle.com.mx/">mhle.com.mx</a>
 			</div>
