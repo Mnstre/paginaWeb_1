@@ -1,4 +1,4 @@
-: Pagina Principal :
+﻿: Pagina Principal :
  - Video de Presentación
 ----------------------
 Productos
@@ -16,3 +16,8 @@ Contacto
  - Dirección (Maps)
 Galería
  - Fotos
+
+**PENDIENTES**
+- Aviso de "Web in Development"
+- Form de correo electrónico
+- Creación de las páginas de los productos
