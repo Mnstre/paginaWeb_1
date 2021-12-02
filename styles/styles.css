@@ -60,7 +60,7 @@ body a{
 .containerCard-3 { background-image: url(../media/images/card_camara.jpg);}
 .containerCard p {
     color: rgb(235, 235, 235);
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.6);
 }
 .containerCard {
     background-size: cover;
@@ -160,7 +160,7 @@ footer {
   align-items: center;
   padding: .25rem .5rem;
   font-weight: 600;
-  color: rgba(0, 0, 0, .65);
+  color: rgba(0, 0, 0, .85);
   background-color: transparent;
   border: 0;
 }
