@@ -22,9 +22,6 @@ document.addEventListener("DOMContentLoaded", function() {
           }
           last_scroll_top = scroll_top;
     });
-    // window.addEventListener
   }
-  // if
-
 });
 ///////////////////////////////////////////////////////////////////////////////////////
