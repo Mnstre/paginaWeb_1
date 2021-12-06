@@ -52,91 +52,9 @@ body a{
     transform:translateY(0); transition: all 0.3s ease-in-out;
   }
 /*************************************************************************/
-/* Carousel base class */
+/*                             CARDS START                               */
 
-/*************************************************************************/
-/*
-.containerCard-0 { background-image: url(../media/images/card_panel.PNG); }
-.containerCard-1 { background-image: url(../media/images/card_calentador.jpg); }
-.containerCard-2 { background-image: url(../media/images/card_copiadora.jpg); }
-.containerCard-3 { background-image: url(../media/images/card_camara.jpg);}
-.containerCard p {
-    color: rgb(235, 235, 235);
-    background-color: rgba(0, 0, 0, 0.6);
-}
-.containerCard {
-    background-size: cover;
-    width: 500px;
-    height: 250px;
-    
-    box-shadow: 0 6px 10px rgba(0,0,0,.08), 0 0 6px rgba(0,0,0,.05);
-    transition: .5s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
-}
-.containerCard:hover {
-    transform: scale(1.05);
-    box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
-}
-.card-1{
-    background-image: url(https://ionicframework.com/img/getting-started/ionic-native-card.png);
-    background-repeat: no-repeat;
-    background-position: right;
-    background-size: 80px;
-}*/
-.cardProduct {
-    flex-wrap: wrap;
-    display: flex;
-  
-    /*box-shadow: 0 4px 21px -12px rgba(0, 0, 0, 0.66);*/
-    /*border-radius: 10px;*/
-    margin: 0 0 2rem 0;
-    overflow: hidden;
-    position: relative;
-    color: #424242;
-    background-image: linear-gradient(150deg, rgba(102, 195, 64, 0.05), rgba(102, 195, 64, 0.05), rgba(102, 195, 64, 0.5));
-    border-color: white;
-}
-.cPz {
-    background-image: linear-gradient(205deg, rgba(102, 195, 64, 0.05), rgba(102, 195, 64, 0.05), rgba(102, 195, 64, 0.5));
-}
-#cardImage {
-    max-height: 180px;
-    width: 100%;
-    object-fit: cover;
-    position: relative;
-    transition: transform 0.3s ease;
-    transform: scale(1.1);
-}
-.cardProduct:hover {
-    background-image: linear-gradient(150deg, rgba(102, 195, 64, 0.05), rgba(102, 195, 64, 0.1), rgba(102, 195, 64, 1));
-}
-.cardProduct:hover #cardImage {
-    transform: scale(1.3);
-}
-/****************/
-/*
-.card {
-    border-radius: 4px;
-    background: #fff;
-    box-shadow: 0 6px 10px rgba(0,0,0,.08), 0 0 6px rgba(0,0,0,.05);
-    transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
-    padding: 14px 80px 18px 36px;
-    cursor: pointer;
-}
-.card:hover{
-    transform: scale(1.05);
-    box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
-}
-.card img{
-    position: absolute;
-    top: 20px;
-    right: 15px;
-    max-height: 120px;
- }
-.card span {
-    color: white;
-    font-size: 1em;
-}
-*/
+/*                              CARDS END                                */
 /*************************************************************************/
 #redesText {
     color: gray;
