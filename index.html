@@ -29,7 +29,7 @@
 	<!--==============================================================================================================================-->
 	<body class="justify-content-center">
 		<!-- ==== Navbar ==== -->
-		<nav class="autohide navbar navbar-expand-xl fixed-top justify-content-center shadow-sm" style="padding: 0%;">
+		<nav class="autohide navbar navbar-expand-xl fixed-top justify-content-center shadow-sm d-none" style="padding: 0%;">
 			<div class="container text-center text-white justify-content-center p-2 px-5">
 				<button class="navbar-toggler navbar-toggler-right btn-outline-success" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation" data-target="#menu" data-toggle="collapse" type="button">
@@ -126,38 +126,53 @@
 		<!-- ==== END CAROUSEL ==== -->
 		<!--div class="divider"></div-->
 		<!--  ==== CARDS ====  -->
-		<div class="col-12 col-md-10 container p-5 justify-content-center cardsOrg">
+		<div class="col-12 col-md-9 container p-5 cardsOrg">
+			<h1 class="text-center p-3 display-5 textTitle">Consulte nuestros diferentes productos:</h1>
 			<div class="row m-4">
 				<div class="col-6">
-					<div class="card">
-						<img class="card-img" src="media/images/card_copiadora.jpg">
-						<p>Multifuncionales</p>
+					<div class="card-flyer">
+						<div class="text-box">
+							<div class="image box">
+								<img src="media/images/card_copiadora.jpg">	
+							</div>
+							<div class="card-img-overlay h-100 d-flex flex-column justify-content-center">
+								<h1>Multifuncionales</h1>
+							</div>
+						</div>
 					</div>
 				</div>
 				<div class="col">
 					<div class="row">
 						<div class="col">
-							<div class="card-6 m-1">
+							<div class="card m-1">
 								<img class="card-img" src="media/images/card_panel.PNG">
-								<p>Paneles Solares</p>
+								<div class="card-img-overlay h-100 d-flex flex-column justify-content-center text-center">
+									<h5>Paneles Solares</h5>
+								</div>
 							</div>
 						<!--/div>
 						<div class="col"-->
-							<div class="card-6 m-1">
+							<div class="card m-1">
 								<img class="card-img" src="media/images/card_calentador.jpg">
-								<p>Calentadores Solares</p>
+								<div class="card-img-overlay h-100 d-flex flex-column justify-content-center text-center">
+									<h5>Calentadores Solares</h5>
+								</div>
 							</div>
 						</div>
 						<div class="col">
-							<div class="card-6 m-1">
+							<div class="card m-1">
 								<img class="card-img" src="media/images/card_camara.jpg">
-								<p>Multifuncionales</p>
+								<div class="card-img-overlay h-100 d-flex flex-column justify-content-center text-center">
+									<h5>Cámaras de Seguridad</h5>
+								</div>
 							</div>
 						<!--/div>
 						<div class="col"-->
-							<div class="card-6 m-1">
+							<div class="card m-1">
 								<img class="card-img" src="media/images/card_copiadora.jpg">
-								<p>Multifuncionales</p>
+								<div class="card-img-overlay h-100 d-flex flex-column justify-content-center text-center">
+									<h5>Consumibles</h5>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -165,6 +180,74 @@
 			</div>
 		</div>
 		<!--  ==== END CARDS ====  -->
+		<!-- Topic Cards -->
+		<div id="cards_landscape_wrap-2">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+						<a href="">
+							<div class="card-flyer">
+								<div class="text-box">
+									<div class="image-box">
+										<img src="https://cdn.pixabay.com/photo/2018/03/30/15/11/deer-3275594_960_720.jpg" alt="" />
+									</div>
+									<div class="text-container">
+										<h6>Title 01</h6>
+										<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+									</div>
+								</div>
+							</div>
+						</a>
+					</div>
+					<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+						<a href="">
+							<div class="card-flyer">
+								<div class="text-box">
+									<div class="image-box">
+										<img src="https://cdn.pixabay.com/photo/2018/04/09/19/55/low-poly-3305284_960_720.jpg" alt="" />
+									</div>
+									<div class="text-container">                                    
+										<h6>Title 02</h6>
+										<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+									</div>
+								</div>
+							</div>
+						</a>
+					</div>
+					<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+						<a href="">
+							<div class="card-flyer">
+								<div class="text-box">
+									<div class="image-box">
+										<img src="https://cdn.pixabay.com/photo/2018/04/06/13/46/poly-3295856_960_720.png" alt="" />
+									</div>
+									<div class="text-container">
+										<h6>Title 03</h6>
+									   <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+									</div>
+								</div>
+							</div>
+						</a>
+					</div>
+					<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+						<a href="">
+							<div class="card-flyer">
+								<div class="text-box">
+									<div class="image-box">
+										<img src="https://cdn.pixabay.com/photo/2018/03/30/15/12/dog-3275593_960_720.jpg" alt="" />
+									</div>
+									<div class="text-container">
+										<h6>Title 04</h6>
+									   <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+									</div>
+								</div>
+							</div>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	
 		<!--div class="divider"></div-->
 		<!-- ==== Banner Redes ==== -->
 		<div class="container-fluid py-1 px-auto" style="background-color: rgba(102, 195, 64);">
