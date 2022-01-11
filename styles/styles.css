@@ -57,15 +57,42 @@ body a{
   position: relative;
   text-align: center;
   background-color: white;
+  -webkit-transition: all 0.4s ease-in;
+  -moz-transition: all 0.4s ease-in;
+  -ms-transition: all 0.4s ease-in;
+  -o-transition: all 0.4s ease-in;
+  transition: all 0.4s ease-in;
+  box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.40);
 }
-.card-text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
+.card-main:hover {
+  -webkit-transition: all 0.4s ease-in;
+  -moz-transition: all 0.4s ease-in;
+  -ms-transition: all 0.4s ease-in;
+  -o-transition: all 0.4s ease-in;
+  transition: all 0.4s ease-in;
+  z-index: 1000;
+  box-shadow: 0px 15px 26px rgba(0, 0, 0, 0.50);
+}
+.card-main:hover .card-img {
+  -webkit-transition: all 0.4s ease-in;
+  -moz-transition: all 0.4s ease-in;
+  -ms-transition: all 0.4s ease-in;
+  -o-transition: all 0.4s ease-in;
+  transition: all 0.4s ease-in;
+  opacity: 0.3;
+}
+.card-main .card-info {
+  font-size: xx-large;
   color: rgba(102, 195, 64, 1);
   text-shadow: 1px 1px #0000009f;
   user-select: none;
+}
+.card-main:hover .card-info {
+  text-shadow: 1px 3px #0000009f;
+}
+.card-main li {
+  color: rgb(79, 79, 79);
+  text-decoration: none;
 }
 /*                              CARDS END                                */
 /*************************************************************************/
