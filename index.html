@@ -29,7 +29,7 @@
 	<!--==============================================================================================================================-->
 	<body class="justify-content-center">
 		<!-- ==== Navbar ==== -->
-		<nav class="autohide navbar navbar-expand-xl fixed-top justify-content-center shadow-sm" style="padding: 0%;">
+		<nav class="navbar navbar-expand-xl fixed-top justify-content-center shadow-lg" style="padding: 0%;">
 			<div class="container text-center text-white justify-content-center p-2 px-5">
 				<button class="navbar-toggler navbar-toggler-right btn-outline-success" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation" data-target="#menu" data-toggle="collapse" type="button">
@@ -38,8 +38,8 @@
             		</svg>
         		</button>
 				<!--Logo Empresa-->
-				<a href="#" class="navbar-brand col col-lg-4 text-lg-left text-center pl-0 logo mx-5">
-					<img src="media/icons/logo_completo_navbar.png" width="240px">
+				<a href="insertData.html" class="navbar-brand col col-lg-4 text-lg-left text-center pl-0 logo mx-5" style="padding: 0px;">
+					<img src="media/icons/logo_completo_navbar.png">
 				</a>
 				<div class="col-lg-8 collapse navbar-collapse justify-content-center" id="menu">
 					<ul class="navbar-nav mx-auto">
@@ -126,29 +126,28 @@
 		<!-- ==== END CAROUSEL ==== -->
 		<!--div class="divider"></div-->
 		<!--  ==== CARDS ====  -->
-		<div class="col-12 col-md-11 container p-5 cardsOrg text-center">
-			<h1 class="p-3 display-5 textTitle">Consulte nuestros diferentes productos:</h1>
+		<div class="col-12 col-md-11 container p-5	 text-center">
+			<h2 class="p-3 display-5 textTitle">Consulte nuestros diferentes productos:</h2>
 			<div class="row">
 				<div class="col">
-					<div class="d-flex card-main h-100">
-						<!--img class="card-img img-fluid" src="media/images/card_copiadora.jpg"-->
-						<div class="card-text fs-1 m-auto py-5">Multifuncionales</div>
+					<div class="card-main h-100" style="background-image: url('media/images/card_copiadora.jpg');">
+						<a class="d-flex h-100" href="products/multifuncionales.html">
+							<div class="card-text fs-1 m-auto py-5">Multifuncionales</div>
+						</a>
 					</div>
 				</div>
 				<div class="col-sm">
 					<div class="row">
 						<div class="col-12 col-lg-6 mt-4 mt-lg-2">
-							<div class="card-main h-100">
-								<a class="d-flex" href="products/paneles.html">
-									<!--img class="card-img" src="media/images/card_panel.PNG" class="img-fluid"-->
+							<div class="card-main h-100" style="background-image: url('media/images/card_panel.PNG');">
+								<a class="d-flex h-100" href="products/paneles.html">
 									<div class="card-text fs-3 m-auto py-5">Paneles Solares</div>
 								</a>
 							</div>
 						</div>
 						<div class="col-12 col-lg-6 mt-4 mt-lg-2">
-							<div class="card-main h-100">
-								<a class="d-flex" href="products/calentador.html">
-									<!--img class="card-img" src="media/images/card_calentador.jpg" class="img-fluid"-->
+							<div class="card-main h-100" style="background-image: url('media/images/card_calentador.jpg');">
+								<a class="d-flex h-100" href="products/calentador.html">
 									<div class="card-text fs-3 m-auto py-5">Calentadores Solares</div>
 								</a>
 							</div>
@@ -156,17 +155,15 @@
 					</div>
 					<div class="row">
 						<div class="col-12 col-lg-6 mt-4 mt-lg-2">
-							<div class="card-main h-100">
+							<div class="card-main h-100" style="background-image: url('media/images/card_camara.jpg');">
 								<a class="d-flex" href="products/camaras.html">
-									<!--img class="card-img" src="media/images/card_camara.jpg" class="img-fluid"-->
 									<div class="card-text fs-3 m-auto py-5">Cámaras de Seguridad</div>
 								</a>
 							</div>
 						</div>
 						<div class="col-12 col-lg-6 mt-4 mt-lg-2">
-							<div class="card-main h-100">
-								<a class="d-flex" href="products/consumibles.html">
-									<!--img class="card-img" src="media/images/card_copiadora.jpg" class="img-fluid"-->
+							<div class="card-main h-100" style="background-image: url('media/images/card_copiadora.jpg');">
+								<a class="d-flex h-100" href="products/consumibles.html">
 									<div class="card-text fs-3 m-auto py-5">Consumibles</div>
 								</a>
 							</div>
@@ -178,7 +175,7 @@
 		<!--  ==== END CARDS ====  -->
 		<!--div class="divider"></div-->
 		<!-- ==== Banner Redes ==== -->
-		<div class="container-fluid py-1 px-auto" style="background-color: rgba(102, 195, 64);">
+		<div class="container-fluid mt-5 py-1 px-auto" style="background-color: rgba(102, 195, 64);">
 			<div class="container">
 				<div class="row">
 					<div class="col-12 col-lg-6 my-auto py-3 text-center">

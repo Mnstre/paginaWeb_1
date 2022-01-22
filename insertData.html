@@ -1,35 +1,104 @@
+// PHP code to establish connection
+// with the localserver
+<?php
+  
+// Username is root
+$user = 'root';
+$password = ''; 
+  
+// Database name is gfg
+$database = 'dbMHLE'; 
+  
+// Server is localhost with
+// port number 3308
+$servername='localhost:3306';
+$mysqli = new mysqli($servername, $user, 
+                $password, $database);
+  
+// Checking for connections
+if ($mysqli->connect_error) {
+    die('Connect Error (' . 
+    $mysqli->connect_errno . ') '. 
+    $mysqli->connect_error);
+}
+  
+// SQL query to select data from database
+$sql = "SELECT * FROM contenido ORDER BY score DESC ";
+$result = $mysqli->query($sql);
+$mysqli->close(); 
+?>
+// HTML code to display data in tabular format
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-        <title>Contact Form - PHP/MySQL Demo Code</title>
-    </head>
-
-    <body>
-        <fieldset>
-            <legend>Contact Form</legend>
-            <form name="frmContact" method="post" action="contact.php">
-            <p>
-                <label for="Name">Name </label>
-                <input type="text" name="txtName" id="txtName">
-            </p>
-            <p>
-                <label for="email">Email</label>
-                <input type="text" name="txtEmail" id="txtEmail">
-            </p>
-            <p>
-                <label for="phone">Phone</label>
-                <input type="text" name="txtPhone" id="txtPhone">
-            </p>
-            <p>
-                <label for="message">Message</label>
-                <textarea name="txtMessage" id="txtMessage"></textarea>
-            </p>
-            <p>&nbsp;</p>
-            <p>
-                <input type="submit" name="Submit" id="Submit" value="Submit">
-            </p>
-            </form>
-        </fieldset>
-    </body>
+<html lang="en">
+  
+<head>
+    <meta charset="UTF-8">
+    <title>GFG User Details</title>
+    <!-- CSS FOR STYLING THE PAGE -->
+    <style>
+        table {
+            margin: 0 auto;
+            font-size: large;
+            border: 1px solid black;
+        }
+  
+        h1 {
+            text-align: center;
+            color: #006600;
+            font-size: xx-large;
+            font-family: 'Gill Sans', 'Gill Sans MT', 
+            ' Calibri', 'Trebuchet MS', 'sans-serif';
+        }
+  
+        td {
+            background-color: #E4F5D4;
+            border: 1px solid black;
+        }
+  
+        th,
+        td {
+            font-weight: bold;
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+  
+        td {
+            font-weight: lighter;
+        }
+    </style>
+</head>
+  
+<body>
+    <section>
+        <h1>GeeksForGeeks</h1>
+        <!-- TABLE CONSTRUCTION-->
+        <table>
+            <tr>
+                <th>GFG UserHandle</th>
+                <th>Practice Problems</th>
+                <th>Coding Score</th>
+                <th>GFG Articles</th>
+            </tr>
+            <!-- PHP CODE TO FETCH DATA FROM ROWS-->
+            <?php   // LOOP TILL END OF DATA 
+                while($rows=$result->fetch_assoc())
+                {
+             ?>
+            <tr>
+                <!--FETCHING DATA FROM EACH 
+                    ROW OF EVERY COLUMN-->
+                <td><?php echo $rows['nombre'];?></td>
+                <td><?php echo $rows['imagen'];?></td>
+                <td><?php echo $rows['categoria'];?></td>
+                <td><?php echo $rows['info1'];?></td>
+                <td><?php echo $rows['info2'];?></td>
+            </tr>
+            <?php
+                }
+             ?>
+        </table>
+    </section>
+</body>
+  
 </html>
