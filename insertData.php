@@ -1,17 +1,17 @@
+<?php
 // PHP code to establish connection
 // with the localserver
-<?php
-  
+
 // Username is root
-$user = 'root';
-$password = ''; 
+$user = 'superMHLE';
+$password = 'admin12345';
   
 // Database name is gfg
 $database = 'dbMHLE'; 
   
 // Server is localhost with
 // port number 3308
-$servername='localhost:3306';
+$servername='localhost';
 $mysqli = new mysqli($servername, $user, 
                 $password, $database);
   
@@ -23,17 +23,18 @@ if ($mysqli->connect_error) {
 }
   
 // SQL query to select data from database
-$sql = "SELECT * FROM contenido ORDER BY score DESC ";
+$sql = "SELECT * FROM contenido";
 $result = $mysqli->query($sql);
-$mysqli->close(); 
+$mysqli->close();
 ?>
-// HTML code to display data in tabular format
+
 <!DOCTYPE html>
 <html lang="en">
-  
+
 <head>
     <meta charset="UTF-8">
     <title>GFG User Details</title>
+    <?php include 'insertDataPHP.php';?>
     <!-- CSS FOR STYLING THE PAGE -->
     <style>
         table {
@@ -75,10 +76,11 @@ $mysqli->close();
         <!-- TABLE CONSTRUCTION-->
         <table>
             <tr>
-                <th>GFG UserHandle</th>
-                <th>Practice Problems</th>
-                <th>Coding Score</th>
-                <th>GFG Articles</th>
+                <th>Nombre</th>
+                <th>Dirección Imagen</th>
+                <th>Categoria</th>
+                <th>Info 1</th>
+                <th>Info 2</th>
             </tr>
             <!-- PHP CODE TO FETCH DATA FROM ROWS-->
             <?php   // LOOP TILL END OF DATA 

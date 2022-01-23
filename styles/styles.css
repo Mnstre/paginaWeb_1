@@ -201,11 +201,21 @@ footer {
 .fw-semibold { font-weight: 600; }
 .lh-tight { line-height: 1.25; }
 /*****************************************************/
-/********************  FONT SIZES ********************/
 .textTitle{
     color: rgb(110,110,110);
 }
 h1 {
   text-decoration: none;
   color: rgb(110, 110, 110);
+}
+/*****************************************************/
+.searchContainer {
+  color: rgb(110, 110, 110);
+  background-color: rgb(240, 240, 240);
+}
+
+.searchContainer img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
 }

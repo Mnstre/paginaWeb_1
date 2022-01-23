@@ -1,3 +1,33 @@
+<?php
+// PHP code to establish connection
+// with the localserver
+
+// Username is root
+$user = 'superMHLE';
+$password = 'admin12345';
+  
+// Database name is gfg
+$database = 'dbMHLE'; 
+  
+// Server is localhost with
+// port number 3308
+$servername='localhost';
+$mysqli = new mysqli($servername, $user, 
+                $password, $database);
+  
+// Checking for connections
+if ($mysqli->connect_error) {
+    die('Connect Error (' . 
+    $mysqli->connect_errno . ') '. 
+    $mysqli->connect_error);
+}
+  
+// SQL query to select data from database
+$sql = "SELECT * FROM contenido";
+$result = $mysqli->query($sql);
+$mysqli->close();
+?>
+
 <!doctype html>
 <!--MIGUEL-->
 <html lang="es">
@@ -38,7 +68,7 @@
             		</svg>
         		</button>
 				<!--Logo Empresa-->
-				<a href="mhle.com.mx" class="navbar-brand col col-lg-4 text-lg-left text-center pl-0 logo mx-5" style="padding: 0px;">
+				<a href="https:\\www.mhle.com.mx" class="navbar-brand col col-lg-4 text-lg-left text-center pl-0 logo mx-5" style="padding: 0px;">
 					<img src="../media/icons/logo_completo_navbar.png">
 				</a>
 				<div class="col-lg-8 collapse navbar-collapse justify-content-center" id="menu">
@@ -84,11 +114,46 @@
 		<!-- ==== CONTENIDO ==== -->
 		<div class="col-7 py-5 mx-auto">
 			<h1>Multifuncionales</h1>
+			<div class="row">
+				<div class="col-2">
+				</div>
+				<div class="col-10">
+					<?php
+						while($rows = $result->fetch_assoc()) {
+					?>
+					<!-- Tarjeta de BÚSQUEDA -->
+					<div class="searchContainer list-group p-3">
+						<div class="row">
+							<div class="col-3">
+								<img class="mt-2" src="../media/images/productos/<?php $rows['image'] ?>">
+							</div>
+							<div class="col-9">
+								<div id="nBusqueda" class="fs-3">
+									<?php echo $rows['nombre']; ?>
+								</div>
+								<div class="ms-3">
+									<ul class="">
+										<!--li>Tecnología de Impresión:</li>
+										<li>Páginas por minuto:</li>
+										<li>Resolución Máxima:</li>
+										<li>Panel LCD:</li>
+										<li>Tamaño de Papel:</li-->
+										<?php echo $rows['info1']; ?>
+									</ul>
+								</div>
+								<div class="text-end me-5">
+									<button class="btn btn-success">Ver Producto</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- END Tarjeta de BÚSQUEDA -->
+					<?php
+						}
+					?>
+				</div>
+			</div>
 		</div>
-
-
-
-
 		<!-- ==== END CONTENIDO ==== -->
 		<!--div class="divider"></div-->
 		<!-- ==== Footer ==== -->
