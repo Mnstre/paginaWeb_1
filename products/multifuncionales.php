@@ -14,7 +14,8 @@ $database = 'dbMHLE';
 $servername='localhost';
 $mysqli = new mysqli($servername, $user, 
                 $password, $database);
-  
+$mysqli->set_charset("utf8");
+
 // Checking for connections
 if ($mysqli->connect_error) {
     die('Connect Error (' . 
@@ -125,7 +126,7 @@ $mysqli->close();
 					<div class="searchContainer list-group p-3">
 						<div class="row">
 							<div class="col-3">
-								<img class="mt-2" src="../media/images/productos/<?php $rows['image'] ?>">
+								<img class="mt-2" src="../media/images/productos/<?php $rows['image'] ?>" onerror="this.error=null; this.src='../media/images/default.png'">
 							</div>
 							<div class="col-9">
 								<div id="nBusqueda" class="fs-3">
