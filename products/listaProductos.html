@@ -1,4 +1,4 @@
-<?php
+<!--?php
 // PHP code to establish connection
 // with the localserver
 
@@ -27,7 +27,7 @@ if ($mysqli->connect_error) {
 $sql = "SELECT * FROM contenido";
 $result = $mysqli->query($sql);
 $mysqli->close();
-?>
+?-->
 
 <!doctype html>
 <!--MIGUEL-->
@@ -119,9 +119,52 @@ $mysqli->close();
 				<div class="col-2">
 				</div>
 				<div class="col-10">
-					<?php
+					<!--?php
 						while($rows = $result->fetch_assoc()) {
-					?>
+					?-->
+					<!-- Tarjeta de BÚSQUEDA -->
+					<div class="searchContainer list-group p-3">
+						<div class="row">
+							<div class="col-3">
+								<!--img class="mt-2" src="../media/images/productos/<?php $rows['image'] ?>" onerror="this.error=null; this.src='../media/images/default.png'"-->
+								<img class="mt-2" src="../media/images/productos/kyocera_m2540.jpg" onerror="this.error=null; this.src='../media/images/default.png'">
+							</div>
+							<div class="col">
+								<div id="nBusqueda" class="fs-3">
+									<a style="color: rgb(110,110,110);" href="#">KYOCERA M2540dw</a>
+									<!--?php echo $rows['nombre']; ?-->
+								</div>
+								<div class="ms-3">
+									<ul class="">
+										<li>Tecnología: <b>Láser</b></li>
+										<li>Páginas por minuto: <b>42ppm</b></li>
+										<li>Resolución Máxima: <b>1200 x 1200 dpi</b></li>
+										<li>Ethernet: </li>
+										<li>USB: </li>
+										<li>Wifi: </li>
+										<!--?php echo $rows['info1']; ?-->
+									</ul>
+								</div>
+							</div>
+							<div class="text-end me-5 col-3">
+								<button class="btn btn-success">Ver Producto</button>
+							</div>
+						</div>
+					</div>
+					<!-- END Tarjeta de BÚSQUEDA -->
+					<!--?php
+						}
+					?-->
+					<hr style="border-top: 8px solid #bbb; border-radius: 5px;">
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-2">
+				</div>
+				<div class="col-10">
+					<!--?php
+						while($rows = $result->fetch_assoc()) {
+					?-->
 					<!-- Tarjeta de BÚSQUEDA -->
 					<div class="searchContainer list-group p-3">
 						<div class="row">
@@ -130,7 +173,7 @@ $mysqli->close();
 							</div>
 							<div class="col-9">
 								<div id="nBusqueda" class="fs-3">
-									<?php echo $rows['nombre']; ?>
+									<!--?php echo $rows['nombre']; ?-->
 								</div>
 								<div class="ms-3">
 									<ul class="">
@@ -139,7 +182,7 @@ $mysqli->close();
 										<li>Resolución Máxima:</li>
 										<li>Panel LCD:</li>
 										<li>Tamaño de Papel:</li-->
-										<?php echo $rows['info1']; ?>
+										<!--?php echo $rows['info1']; ?-->
 									</ul>
 								</div>
 								<div class="text-end me-5">
@@ -149,9 +192,10 @@ $mysqli->close();
 						</div>
 					</div>
 					<!-- END Tarjeta de BÚSQUEDA -->
-					<?php
+					<!--?php
 						}
-					?>
+					?-->
+					<hr style="border-top: 8px solid #bbb; border-radius: 5px;">
 				</div>
 			</div>
 		</div>
@@ -182,9 +226,9 @@ $mysqli->close();
 							<!-- Content -->
 							<h6 class="text-uppercase fw-bold">
 								<!--i class="fas fa-gem me-3"></i>MHLE - Eco-Tecnologías y Soluciones Integrados-->
-								<img src="../media/icons/logo_completo_navbar.png" width="250px">
+								<img src="../media/icons/logo_completo_navbar.png" width="300px">
 							</h6>
-							<p>
+							<p class="unselec">
 								MHLE, es una empresa familiar nayarita . Buscamos entrar al mercado
 								de energías limpias y proveer servicios de soporte técnico especializado.
 							</p>
